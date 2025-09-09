@@ -1,0 +1,106 @@
+# Pico NTN Modbus Master .gitignore
+# MicroPython project for Raspberry Pi Pico
+
+# MicroPython specific
+.micropico/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.stackdump
+
+# Build and distribution
+build/
+dist/
+*.egg-info/
+*.uf2
+*.bin
+*.hex
+*.elf
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+logs/
+tmp/
+
+# Configuration files (may contain sensitive data)
+config.py
+secrets.py
+wifi_config.py
+device_config.py
+*.ini
+*.cfg
+*.conf
+
+# Network and communication logs
+network.log
+communication.log
+debug.log
+
+# Test files
+test_*.py
+*_test.py
+tests/
+
+# Documentation build
+docs/_build/
+*.pdf
+*.docx
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Environment and virtual environments
+.env
+.venv/
+venv/
+ENV/
+
+# Package management
+*.egg
+*.eggs/
+.eggs/
+lib/
+Lib/
+
+# MicroPython specific
+.mpy
+frozen/
+
+# Project specific
+# Add any project-specific files you want to ignore
+# lora_config.ini
+# ntn_config.ini
+
+# Compiled MicroPython files
+*.mpy
+
+# Firmware files (if downloaded)
+*.uf2
+*.bin
+
+# Temporary development files
+debug_*.py
+temp_*.py

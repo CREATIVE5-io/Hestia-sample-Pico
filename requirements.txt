@@ -1,0 +1,18 @@
+# Pico NTN Modbus Master Requirements
+# MicroPython dependencies for Raspberry Pi Pico
+
+# External libraries (install via upip)
+umodbus>=1.0.0
+
+# Note: The following are built-in MicroPython libraries and don't need installation:
+# - machine (hardware control)
+# - time (timing and delays)
+# - struct (binary data handling)
+# - json (JSON data processing)
+# - re (regular expressions)
+# - binascii (binary data conversion)
+# - sys (system operations)
+# - _thread (threading support)
+
+# Installation command:
+# upip install -r requirements.txt
