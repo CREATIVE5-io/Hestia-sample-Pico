@@ -478,11 +478,8 @@ class ntn_operation(uModbusMaster):
                 if dl_data:
                     # Convert to bytes and decode
                     byte_data = b''.join(struct.pack('>H', v) for v in dl_data)
-                    hex_str = byte_data.hex()
-                    json_bytes = bytes.fromhex(hex_str)
-                    json_str = json_bytes.decode('utf-8')
+                    downlink_data = json.loads(binascii.unhexlify(byte_data).decode('utf-8'))
                     
-                    downlink_data = json.loads(json_str)
                     print(f'Downlink data: {downlink_data}')
                     return downlink_data
             
